@@ -4,12 +4,13 @@
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
 [![System Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](VERSION)
+[![PHP 7 ready](http://php7ready.timesplinter.ch/dunkelfrosch/silex-mongodb-provider/badge.svg?branch=master)](https://travis-ci.org/dunkelfrosch/silex-mongodb-provider)
 [![Build Status](https://travis-ci.org/dunkelfrosch/silex-mongodb-provider.svg?branch=master)](https://travis-ci.org/dunkelfrosch/silex-mongodb-provider)
 
 
 ## Features
  - Support for MongoDB inside [Silex][1] (it does NOT PROVIDE the ODM integration)
- - Support for PHP7 using "alcaeus/mongo-php-adapter" as wrapper for missing ext-mongo module
+ - Support for PHP7 using "alcaeus/mongo-php-adapter" as wrapper for deprecated ext-mongo module
 
 
 ## Requirements
