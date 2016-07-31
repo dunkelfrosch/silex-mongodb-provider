@@ -4,6 +4,8 @@
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
 [![System Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](VERSION)
+[![Build Status](https://travis-ci.org/dunkelfrosch/silex-mongodb-provider.svg?branch=master)](https://travis-ci.org/dunkelfrosch/silex-mongodb-provider)
+
 
 ## Features
  - Support for MongoDB inside [Silex][1] (it does NOT PROVIDE the ODM integration)
