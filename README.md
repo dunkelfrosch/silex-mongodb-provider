@@ -21,7 +21,10 @@
 
 ## Installation
 
-Through [Composer](http://getcomposer.org) as [df/saxulum-doctrine-mongodb-provider][3].
+Through [Composer](http://getcomposer.org) as [df/silex-doctrine-mongodb-provider][3].
+```$
+composer require df/silex-doctrine-mongodb-provider 
+```
 
 Example for one connection:
 
@@ -99,5 +102,5 @@ $app['mongodbs']['mongo1']
 
 [1]: http://silex.sensiolabs.org/
 [2]: http://docs.doctrine-project.org/projects/doctrine-mongodb-odm/en/latest/
-[3]: https://packagist.org/packages/df/doctrine-mongodb-odm-provider
+[3]: https://packagist.org/packages/df/silex-doctrine-mongodb-provider
 [4]: http://silex.sensiolabs.org/doc/providers/doctrine.html
