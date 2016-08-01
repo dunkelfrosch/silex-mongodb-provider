@@ -1,9 +1,9 @@
-# SILEX DoctrineMongoDbProvider v0.9.9
+# SILEX DoctrineMongoDbProvider
 
 *This Silex service provider for mongodb is based on Dominik Zogg <dominik.zogg@gmail.com> great repository [saxulum-doctrine-mongodb-provider](https://github.com/saxulum/saxulum-doctrine-mongodb-provider) containing some improvements and refactoring to gain compatibility for silex 3.n and php7. This documentation isn't fully done yet - i'll working on to build the first 1.0.0 stable release within the next days*
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
-[![System Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](VERSION)
+[![System Version](https://img.shields.io/badge/version-0.9.9-blue.svg)](VERSION)
 [![PHP 7 ready](http://php7ready.timesplinter.ch/dunkelfrosch/silex-mongodb-provider/badge.svg?branch=master)](https://travis-ci.org/dunkelfrosch/silex-mongodb-provider)
 [![Build Status](https://travis-ci.org/dunkelfrosch/silex-mongodb-provider.svg?branch=master)](https://travis-ci.org/dunkelfrosch/silex-mongodb-provider)
 
