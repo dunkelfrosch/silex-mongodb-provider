@@ -1,4 +1,4 @@
-# SILEX DoctrineMongoDbProvider v0.9.9
+# SILEX DoctrineMongoDbProvider
 
 All notable changes of the DoctrineMongoDbProvider release series are documented in this file using the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
