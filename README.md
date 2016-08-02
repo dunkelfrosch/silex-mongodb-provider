@@ -21,9 +21,33 @@
 
 ## Installation
 
-Through [Composer](http://getcomposer.org) as [df/silex-doctrine-mongodb-provider][3].
-```$
-composer require df/silex-doctrine-mongodb-provider 
+Add the 'ext-replace' key as shown below within your composer.json
+```
+    "replace": {
+        "ext-mongo": "^1.6"
+    },
+```
+
+*As long as packagist.org has some troubles fetching the right version from provided repository add our github repository directly inside your composer.json file (line before the "require" key) as shown below ...*
+```
+...,
+"replace": {
+    "ext-mongo": "^1.6"
+},
+"repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "df/silex-doctrine-mongodb-provider",
+                "version": "0.9.9",
+                "dist": {
+                    "url": "https://github.com/dunkelfrosch/silex-mongodb-provider/archive/0.9.9.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ],
+...
 ```
 
 Example for one connection:
