@@ -4,6 +4,12 @@ All notable changes of the DoctrineMongoDbProvider release series are documented
 
 _This ChangeLog documentation start with version 0.9.9 (2016-07-31)_
 
+## [1.0.0], 2016-08-02:
+
+### CHANGES
+- documentation issue (packagist.org fix)
+- documentation issue (missing replace info for ext-mongo)
+
 ## [0.9.9], 2016-07-31:
 _current_
 
