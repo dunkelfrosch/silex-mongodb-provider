@@ -24,7 +24,7 @@
 Add the 'ext-replace' key as shown below within your composer.json
 ```
     "replace": {
-        "ext-mongo": "^1.6"
+        "ext-mongo": "1.6.12"
     },
 ```
 
@@ -32,7 +32,7 @@ Add the 'ext-replace' key as shown below within your composer.json
 ```
 ...,
 "replace": {
-    "ext-mongo": "^1.6"
+    "ext-mongo": "1.6.12"
 },
 "repositories": [
         {
