@@ -28,7 +28,7 @@ Add the 'ext-replace' key as shown below within your composer.json
     },
 ```
 
-*As long as packagist.org has some troubles fetching the right version from provided repository add our github repository directly inside your composer.json file (line before the "require" key) as shown below ...*
+*As long as packagist.org has some troubles fetching the right version from provided repository add our github repository directly inside your composer.json file (line before the "require" key) as shown below and set this requirement manually*
 ```
 ...,
 "replace": {
@@ -47,6 +47,11 @@ Add the 'ext-replace' key as shown below within your composer.json
             }
         }
     ],
+"require": {
+    ...,
+    "df/silex-doctrine-mongodb-provider": "^1.0.0",
+    ...
+}
 ...
 ```
 
