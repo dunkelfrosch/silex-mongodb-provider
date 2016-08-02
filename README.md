@@ -39,9 +39,9 @@ Add the 'ext-replace' key as shown below within your composer.json
             "type": "package",
             "package": {
                 "name": "df/silex-doctrine-mongodb-provider",
-                "version": "0.9.9",
+                "version": "1.0.0",
                 "dist": {
-                    "url": "https://github.com/dunkelfrosch/silex-mongodb-provider/archive/0.9.9.zip",
+                    "url": "https://github.com/dunkelfrosch/silex-mongodb-provider/archive/1.0.0.zip",
                     "type": "zip"
                 }
             }
