@@ -1,9 +1,9 @@
-# SILEX DoctrineMongoDbProvider
+# SILEX Doctrine MongoDb Provider
 
-*This Silex service provider for mongodb is based on Dominik Zogg <dominik.zogg@gmail.com> great repository [saxulum-doctrine-mongodb-provider](https://github.com/saxulum/saxulum-doctrine-mongodb-provider) containing some improvements and refactoring to gain compatibility for silex 3.n and php7. This documentation isn't fully done yet - i'll working on to build the first 1.0.0 stable release within the next days*
+*Just another Silex service provider for mongodb, based on Dominik Zogg <dominik.zogg@gmail.com> great repository [saxulum-doctrine-mongodb-provider](https://github.com/saxulum/saxulum-doctrine-mongodb-provider) containing some improvements and refactoring to gain compatibility for silex 2.n/pimple 3.n and PHP 7.n*
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
-[![System Version](https://img.shields.io/badge/version-0.9.9-blue.svg)](VERSION)
+[![System Version](https://img.shields.io/badge/version-1.0.1-blue.svg)](VERSION)
 [![PHP 7 ready](http://php7ready.timesplinter.ch/dunkelfrosch/silex-mongodb-provider/badge.svg?branch=master)](https://travis-ci.org/dunkelfrosch/silex-mongodb-provider)
 [![Build Status](https://travis-ci.org/dunkelfrosch/silex-mongodb-provider.svg?branch=master)](https://travis-ci.org/dunkelfrosch/silex-mongodb-provider)
 
@@ -11,51 +11,26 @@
 ## Features
  - Support for MongoDB inside [Silex][1] (it does NOT PROVIDE the ODM integration)
  - Support for PHP7 using "alcaeus/mongo-php-adapter" as wrapper for deprecated ext-mongo module
+ - ODM integration will provide by [df/silex-doctrine-mongodb-odm-provider][4] (take a look)
 
 
 ## Requirements
  - PHP >= 5.5.n
  - Silex 2.n (pimple 3.n)
- - Doctrine Mongodb (>= 1.3.0)
+ - Doctrine MongoDb (>= 1.3.0)
 
 
 ## Installation
 
-Add the 'ext-replace' key as shown below within your composer.json
-```
-    "replace": {
-        "ext-mongo": "1.6.12"
-    },
+Using [composer](http://getcomposer.org) [df/silex-doctrine-mongodb-provider][3].
+```$
+composer require df/silex-doctrine-mongodb-provider 
 ```
 
-*As long as packagist.org has some troubles fetching the right version from provided repository add our github repository directly inside your composer.json file (line before the "require" key) as shown below and set this requirement manually*
-```
-...,
-"replace": {
-    "ext-mongo": "1.6.12"
-},
-"repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "df/silex-doctrine-mongodb-provider",
-                "version": "1.0.0",
-                "dist": {
-                    "url": "https://github.com/dunkelfrosch/silex-mongodb-provider/archive/1.0.0.zip",
-                    "type": "zip"
-                }
-            }
-        }
-    ],
-"require": {
-    ...,
-    "df/silex-doctrine-mongodb-provider": "^1.0.0",
-    ...
-}
-...
-```
 
-Example for one connection:
+## Setup
+
+- Example for one connection:
 
 ``` {.php}
 $app->register(new DoctrineMongoDbProvider(), [
@@ -70,7 +45,7 @@ $app->register(new DoctrineMongoDbProvider(), [
 ]);
 ```
 
-Example for multiple connections:
+- Example for multiple connections:
 
 ``` {.php}
 $app->register(new DoctrineMongoDbProvider(), [
@@ -98,7 +73,7 @@ $app->register(new DoctrineMongoDbProvider(), [
 
 ## Usage
 
-Example for one connection:
+- Example for one connection:
 
 ``` {.php}
 $document = ['key' => 'value'];
@@ -110,7 +85,7 @@ $app['mongodb']
 ;
 ```
 
-Example for multiple connections:
+- Example for multiple connections:
 
 ``` {.php}
 $document = ['key' => 'value'];
@@ -125,11 +100,12 @@ $app['mongodbs']['mongo1']
 
 ## Copyright
 - Patrick Paechnatz <patrick.paechnatz@gmail.com>
-- Dominik Zogg <dominik.zogg@gmail.com> (the origin provider author)
+- Dominik Zogg <dominik.zogg@gmail.com> (the origin service provider author)
 - Fabien Potencier <fabien@symfony.com> ([DoctrineServiceProvider][4], Logger)
 - Kris Wallsmith <kris@symfony.com> (Logger)
 
 [1]: http://silex.sensiolabs.org/
 [2]: http://docs.doctrine-project.org/projects/doctrine-mongodb-odm/en/latest/
 [3]: https://packagist.org/packages/df/silex-doctrine-mongodb-provider
-[4]: http://silex.sensiolabs.org/doc/providers/doctrine.html
+[4]: https://packagist.org/packages/df/silex-doctrine-mongodb-odm-provider
+[5]: http://silex.sensiolabs.org/doc/providers/doctrine.html
