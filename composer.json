@@ -15,7 +15,7 @@
         }
     ],
     "replace": {
-        "ext-mongo": "1.6.12"
+        "ext-mongo": "1.6.13"
     },
     "require": {
         "php": "^5.5 || ^7.0",
