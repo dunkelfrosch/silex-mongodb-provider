@@ -1,7 +1,7 @@
 {
     "name": "df/silex-doctrine-mongodb-provider",
     "description": "Silex Doctrine MongoDB Provider",
-    "keywords": ["dunkelfrosch", "df", "pimple", "cilex", "silex", "doctrine", "mongo", "mongodb", "database"],
+    "keywords": ["dunkelfrosch", "df", "pimple", "cilex", "silex", "doctrine", "mongo", "mongodb", "database", "service", "provider"],
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -14,6 +14,14 @@
             "email": "dominik.zogg@gmail.com"
         }
     ],
+    "support": {
+        "email": "patrick.paechnatz@gmail.com",
+        "issues": "https://github.com/dunkelfrosch/silex-mongodb-provider/issues",
+        "source": "https://github.com/dunkelfrosch/silex-mongodb-provider"
+    },
+    "provide": {
+        "ext-mongo": "1.6.13"
+    },
     "require": {
         "php": "^5.5 || ^7.0",
         "pimple/pimple": "~3.0",
@@ -42,7 +50,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "dev-master": "1.1-dev"
         }
     }
 }
