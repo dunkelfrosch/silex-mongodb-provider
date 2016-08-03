@@ -1,7 +1,7 @@
 {
     "name": "df/silex-doctrine-mongodb-provider",
     "description": "Silex Doctrine MongoDB Provider",
-    "keywords": ["dunkelfrosch", "df", "pimple", "cilex", "silex", "doctrine", "mongo", "mongodb"],
+    "keywords": ["dunkelfrosch", "df", "pimple", "cilex", "silex", "doctrine", "mongo", "mongodb", "database"],
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -29,12 +29,23 @@
         "phpunit/phpunit": "^4.8",
         "silex/silex": "^2.0.2"
     },
+
+    "autoload": {
+        "psr-4": { "DF\\DoctrineMongoDb\\": "src/" }
+    },
+    "config": {
+        "bin-dir": "bin",
+        "process-timeout": 60,
+        "use-include-path": false,
+        "preferred-install": "auto",
+        "discard-changes": true,
+        "secure-http": false,
+        "minimum-stability": "dev",
+        "prefer-stable": true
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
         }
-    },
-    "autoload": {
-      "psr-4": { "DF\\DoctrineMongoDb\\": "src/" }
     }
 }
